@@ -17,7 +17,7 @@ var options = {
 var fuse = new Fuse(airports, options)
 
 
-var ac = $('#autocomplete')
+var ac = $('.airportpicker')
   .on('click', function(e) {
     e.stopPropagation();
   })
