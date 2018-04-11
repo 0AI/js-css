@@ -2,14 +2,14 @@
   position: relative;
   
   input {
-    width: 78%;
+    width: 100%;
   }
 }
 .autocomplete-results {
-  position: absolute;
+  position: relative;
   background: white;
   z-index: 1;
-  top: 78%;
+  top: 7100%;
   left: 0;
   font-size: 13px;
   border: solid 1px #ddd;
