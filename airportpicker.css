@@ -1,5 +1,5 @@
 .autocomplete-wrapper {
-  position: relative;
+  position: absolute;
   
   input {
     width: 100%;
@@ -15,7 +15,6 @@
   border: solid 1px #ddd;
   border-top-width: 0;
   border-bottom-color: #ccc;
-  width: 78%
   box-shadow: 
     0 5px 10px rgba(0, 0, 0, 0.2);
 }
