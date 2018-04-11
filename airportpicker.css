@@ -6,15 +6,16 @@
   }
 }
 .autocomplete-results {
-  position: relative;
+  position: absolute;
   background: white;
   z-index: 1;
-  top: 7100%;
+  top: 100%;
   left: 0;
   font-size: 13px;
   border: solid 1px #ddd;
   border-top-width: 0;
   border-bottom-color: #ccc;
+  width: 78%
   box-shadow: 
     0 5px 10px rgba(0, 0, 0, 0.2);
 }
