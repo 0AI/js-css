@@ -24,20 +24,6 @@ var ac = $('#mycity')
   .on('focus keyup', search)
   .on('keydown', onKeyDown);
 
-var ac = $('#rw-depart')
-  .on('click', function(e) {
-    e.stopPropagation();
-  })
-  .on('focus keyup', search)
-  .on('keydown', onKeyDown);
-
-var ac = $('#ow-depart')
-  .on('click', function(e) {
-    e.stopPropagation();
-  })
-  .on('focus keyup', search)
-  .on('keydown', onKeyDown);
-
 var wrap = $('<div>')
   .addClass('autocomplete-wrapper')
   .insertBefore(ac)
