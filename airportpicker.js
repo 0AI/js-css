@@ -16,15 +16,7 @@ var options = {
 
 var fuse = new Fuse(airports, options)
 
-
 var ac1 = $('#mycity')
-  .on('click', function(e) {
-    e.stopPropagation();
-  })
-  .on('focus keyup', search)
-  .on('keydown', onKeyDown);
-
-var ac2 = $('#rw-depart')
   .on('click', function(e) {
     e.stopPropagation();
   })
@@ -35,11 +27,6 @@ var wrap1 = $('<div>')
   .addClass('autocomplete-wrapper')
   .insertBefore(ac1)
   .append(ac1);
-
-var wrap2 = $('<div>')
-  .addClass('autocomplete-wrapper')
-  .insertBefore(ac2)
-  .append(ac2);
 
 var list = $('<div>')
   .addClass('autocomplete-results')
@@ -70,10 +57,6 @@ function selectIndex(index) {
     ac1.val(results[index].iata);
     clearResults();
   }  
-  if (results.length >= index + 1) {
-    ac2.val(results[index].iata);
-    clearResults();
-  }  
 }
 
 var results = [];
@@ -87,10 +70,6 @@ function search(e) {
   
   if (ac1.val().length > 0) {
     results = _.take(fuse.search(ac1.val()), 7);
-    numResults = results.length;
-  
-  if (ac2.val().length > 0) {
-    results = _.take(fuse.search(ac2.val()), 7);
     numResults = results.length;
     
     var divs = results.map(function(r, i) {
