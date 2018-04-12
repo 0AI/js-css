@@ -16,7 +16,7 @@ var options = {
 
 var fuse = new Fuse(airports, options)
 
-var ac1 = $('#mycity')
+var ac1 = $('#mycity', '#rw-depart')
   .on('click', function(e) {
     e.stopPropagation();
   })
