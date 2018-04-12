@@ -17,7 +17,21 @@ var options = {
 var fuse = new Fuse(airports, options)
 
 
-var ac = $('.airportpicker')
+var ac = $('#mycity')
+  .on('click', function(e) {
+    e.stopPropagation();
+  })
+  .on('focus keyup', search)
+  .on('keydown', onKeyDown);
+
+var ac = $('#rw-depart')
+  .on('click', function(e) {
+    e.stopPropagation();
+  })
+  .on('focus keyup', search)
+  .on('keydown', onKeyDown);
+
+var ac = $('#ow-depart')
   .on('click', function(e) {
     e.stopPropagation();
   })
